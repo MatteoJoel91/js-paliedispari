@@ -11,6 +11,7 @@ let risultato_somma;
 let risultato_pari_dispari;
 
 
+
 while (domanda_numero < 1 || domanda_numero > 5) {
     domanda_numero = prompt('Il numero inserito non è valido, inserire un numero da 1 a 5');
 }
