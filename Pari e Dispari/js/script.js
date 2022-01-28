@@ -20,13 +20,19 @@ while (domanda_numero < 1 || domanda_numero > 5) {
 console.log('Il numero da te inserito è ' + domanda_numero);
 
 numero_computer = numero_random(1,5);
-console.log('Il numero random del computer è ' + numero_computer);
+console.log('Il numero random generato per il computer è ' + numero_computer);
 
 risultato_somma = somma(numero_computer, domanda_numero);
 console.log('La somma dei numeri è ' + risultato_somma);
 
-risultato_pari_dispari = pari_dispari(risultato_somma);
-console.log(risultato_pari_dispari);
+
+let risultato_finale = pari_dispari(risultato_somma);
+
+if(risultato_finale === domanda_pari_dispari){
+    console.log(`Ha vinto l'utente con il numero: ` + risultato_somma + ` che risulta ` + risultato_finale);
+}else{
+    console.log(`Il pc ha vinto con il numero: ` + risultato_somma + ` che risulta ` + risultato_finale );
+}
 
 
 
@@ -35,9 +41,9 @@ console.log(risultato_pari_dispari);
 function pari_dispari(numero_da_verificare) {
     let risultato;
     if (numero_da_verificare % 2 == 0) {
-        risultato = 'Il numero è pari';
+        risultato = 'pari';
     }else{
-        risultato = 'Il numero è dispari';
+        risultato = 'dispari';
     }
     return risultato;
 }
