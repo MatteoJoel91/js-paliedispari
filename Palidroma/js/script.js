@@ -3,6 +3,16 @@
 
 let parola = prompt('Inserisci una parola per verificare se è palidroma');
 
+// const lettere = parola.split('');
+// console.log(lettere);
+
+// const lettere_invertite = lettere.reverse();
+// console.log(lettere_invertite);
+
+// const lettere_invertite_unite = lettere_invertite.join('');
+// console.log(lettere_invertite_unite);
+
+
 
 
 if (parola == lettere_invertite_unite) {
