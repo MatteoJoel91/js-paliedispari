@@ -10,10 +10,13 @@ let domanda_numero = parseInt(prompt('Inserire un numero da 1 a 5'));
 let risultato_somma;
 let risultato_pari_dispari;
 
-while (! (domanda_pari_dispari == `pari` || domanda_pari_dispari == `dispari`)) {
+
+// condizione di verifica per pari o dispari dal prompt
+while (domanda_pari_dispari == `pari` || domanda_pari_dispari == `dispari`) {
     domanda_pari_dispari = prompt('Preferisci pari o dispari?');
 }
 
+// condizione di verifica per il numero inserito
 while (domanda_numero < 1 || domanda_numero > 5) {
     domanda_numero = prompt('Il numero inserito non è valido, inserire un numero da 1 a 5');
 }
