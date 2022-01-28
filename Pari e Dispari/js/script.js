@@ -12,9 +12,9 @@ let risultato_pari_dispari;
 
 
 // condizione di verifica per pari o dispari dal prompt che per adesso non funziona
-while (domanda_pari_dispari == `pari` || domanda_pari_dispari == `dispari`) {
-    domanda_pari_dispari = prompt('Preferisci pari o dispari?');
-}
+// while (domanda_pari_dispari == `pari` || domanda_pari_dispari == `dispari`) {
+//     domanda_pari_dispari = prompt('Preferisci pari o dispari?');
+// }
 
 // condizione di verifica per il numero inserito
 while (domanda_numero < 1 || domanda_numero > 5) {
