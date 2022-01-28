@@ -33,7 +33,7 @@ function pari_dispari(numero_da_verificare) {
     if (numero_da_verificare % 2 == 0) {
         alert('Il numero è pari');
     }else{
-        alert('Il numero è diapri');
+        alert('Il numero è dispari');
     }
     return risultato;
 }
