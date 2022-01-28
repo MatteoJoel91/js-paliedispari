@@ -29,9 +29,9 @@ console.log('La somma dei numeri è ' + risultato_somma);
 let risultato_finale = pari_dispari(risultato_somma);
 
 if(risultato_finale === domanda_pari_dispari){
-    console.log(`Ha vinto l'utente con il numero: ` + risultato_somma + ` che risulta ` + risultato_finale);
+    console.log(`Ha vinto l'utente con il numero ` + risultato_somma + ` che risulta ` + risultato_finale);
 }else{
-    console.log(`Il pc ha vinto con il numero: ` + risultato_somma + ` che risulta ` + risultato_finale );
+    console.log(`Il pc ha vinto con il numero ` + risultato_somma + ` che risulta ` + risultato_finale );
 }
 
 
