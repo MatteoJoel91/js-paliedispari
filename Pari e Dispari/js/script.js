@@ -7,7 +7,8 @@
 
 let domanda_pari_dispari = prompt('Preferisci pari o dispari?');
 let domanda_numero = parseInt(prompt('Inserire un numero da 1 a 5'));
-
+let risultato_somma;
+let risultato_pari_dispari;
 
 
 while (domanda_numero < 1 || domanda_numero > 5) {
@@ -15,15 +16,15 @@ while (domanda_numero < 1 || domanda_numero > 5) {
 }
 
 
-let numero_computer = numero_random(1,5);
+console.log('Il numero da te inserito è ' + domanda_numero);
 
+numero_computer = numero_random(1,5);
+console.log('Il numero random del computer è ' + numero_computer);
 
+risultato_somma = somma(numero_computer, domanda_numero);
+console.log('La somma dei numeri è ' + risultato_somma);
 
-
-console.log(somma(numero_computer, domanda_numero));
-
-
-console.log(pari_dispari(somma));
+risultato_pari_dispari = pari_dispari(risultato_somma);
 
 
 
@@ -31,13 +32,12 @@ console.log(pari_dispari(somma));
 // funzione pari o dispari
 function pari_dispari(numero_da_verificare) {
     if (numero_da_verificare % 2 == 0) {
-        alert('Il numero è pari');
+        console.log('Il numero è pari');
     }else{
-        alert('Il numero è dispari');
+        console.log('Il numero è dispari');
     }
-    return risultato;
+    return ;
 }
-
 
 // funzione somma
 function somma(num1, num2) {
