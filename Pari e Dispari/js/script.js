@@ -26,6 +26,7 @@ risultato_somma = somma(numero_computer, domanda_numero);
 console.log('La somma dei numeri è ' + risultato_somma);
 
 risultato_pari_dispari = pari_dispari(risultato_somma);
+console.log(risultato_pari_dispari);
 
 
 
@@ -34,9 +35,9 @@ risultato_pari_dispari = pari_dispari(risultato_somma);
 function pari_dispari(numero_da_verificare) {
     let risultato;
     if (numero_da_verificare % 2 == 0) {
-        risultato = console.log('Il numero è pari');
+        risultato = 'Il numero è pari';
     }else{
-        risultato = console.log('Il numero è dispari');
+        risultato = 'Il numero è dispari';
     }
     return risultato;
 }
