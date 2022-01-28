@@ -32,12 +32,13 @@ risultato_pari_dispari = pari_dispari(risultato_somma);
 
 // funzione pari o dispari
 function pari_dispari(numero_da_verificare) {
+    let risultato;
     if (numero_da_verificare % 2 == 0) {
-        console.log('Il numero è pari');
+        risultato = console.log('Il numero è pari');
     }else{
-        console.log('Il numero è dispari');
+        risultato = console.log('Il numero è dispari');
     }
-    return ;
+    return risultato;
 }
 
 // funzione somma
